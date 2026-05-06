@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber2K | 所有商品</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="glass">
+        <div class="logo">Cyber2K</div>
+        <div class="nav-links">
+            <a href="index.html">首頁</a>
+            <a href="list.html">所有商品</a>
+            <a href="#">關於我們</a>
+            <a href="#">購物車</a>
+        </div>
+    </nav>
+
+    <section style="margin-top: 100px;">
+        <h2 class="section-title">所有商品</h2>
+        
+        <div class="list-container">
+            <aside class="sidebar glass">
+                <div class="filter-group">
+                    <h4>分類</h4>
+                    <label class="filter-item"><input type="checkbox"> 全部</label>
+                    <label class="filter-item"><input type="checkbox"> 上衣</label>
+                    <label class="filter-item"><input type="checkbox"> 下著</label>
+                    <label class="filter-item"><input type="checkbox"> 配飾</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>尺寸</h4>
+                    <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                        <button class="bubble-btn">S</button>
+                        <button class="bubble-btn">M</button>
+                        <button class="bubble-btn">L</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>價格範圍</h4>
+                    <input type="range" style="width: 100%; accent-color: var(--primary-neon);">
+                </div>
+            </aside>
+
+            <main class="product-grid" style="flex-grow: 1;">
+                <div class="product-card glass" onclick="window.location.href='detail.html'">
+                    <div class="product-img" style="background-image: url('assets/jacket.png'); background-size: cover;"></div>
+                    <div class="product-info">
+                        <h3>螢光金屬外套</h3>
+                        <p class="price">$2,480</p>
+                    </div>
+                </div>
+                <div class="product-card glass" onclick="window.location.href='detail.html'">
+                    <div class="product-img" style="background-image: url('assets/skirt.png'); background-size: cover;"></div>
+                    <div class="product-info">
+                        <h3>液態銀色迷你裙</h3>
+                        <p class="price">$1,280</p>
+                    </div>
+                </div>
+                <div class="product-card glass" onclick="window.location.href='detail.html'">
+                    <div class="product-img" style="background-image: url('assets/crop_top.png'); background-size: cover;"></div>
+                    <div class="product-info">
+                        <h3>電子藍短版背心</h3>
+                        <p class="price">$980</p>
+                    </div>
+                </div>
+                <div class="product-card glass" onclick="window.location.href='detail.html'">
+                    <div class="product-img" style="background-image: url('assets/boots.png'); background-size: cover;"></div>
+                    <div class="product-info">
+                        <h3>科技感厚底靴</h3>
+                        <p class="price">$3,280</p>
+                    </div>
+                </div>
+                <!-- More items can be added here -->
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cyber2K. All Rights Reserved. 繁體中文版</p>
+    </footer>
+
+</body>
+</html>
